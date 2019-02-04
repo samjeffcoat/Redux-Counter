@@ -22,6 +22,10 @@ export default (state = initialState, action) => {
     case DECREMENT:
     // Fill in the body of this case
     //everttune we decrement we have to update object to decrement
+    return {
+      ...state,
+      count: count --
+    }
     default:
       return state;
   }
