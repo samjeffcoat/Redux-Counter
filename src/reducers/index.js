@@ -14,6 +14,11 @@ export default (state = initialState, action) => {
     case INCREMENT:
     // Fill in the body of this case
     //Everytime we increment we need to return a new state
+    return {
+      ...state,
+      count: count ++
+
+    }
     case DECREMENT:
     // Fill in the body of this case
     //everttune we decrement we have to update object to decrement
